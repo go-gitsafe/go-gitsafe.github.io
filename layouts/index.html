@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ .Site.Title }} — Guards that do not rely on remembering.</title>
+<meta name="description" content="Git guards in pure Go: a hook that refuses a credential in a remote URL, a credential helper, and a scope checker.">
+<link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}">
+<link rel="stylesheet" href="{{ "css/brand.css" | relURL }}">
+<script src="{{ "js/theme.js" | relURL }}"></script>
+</head><body>
+<section class="hero">
+  <button id="themebtn" class="theme" type="button">Theme: System</button>
+  <img src="{{ "img/go-gitsafe-white.png" | relURL }}" alt="go-gitsafe">
+  <h1>go-gitsafe</h1>
+  <p>Guards that do not rely on remembering.</p>
+  <div class="btns">
+    <a class="btn btn-solid" href="https://pkg.go.dev/github.com/go-gitsafe/gitsafe">Reference</a>
+    <a class="btn btn-ghost" href="https://github.com/go-gitsafe">GitHub</a>
+  </div>
+</section>
+<div class="wrap">
+  <div class="panel">
+    <h2>What is go-gitsafe?</h2>
+    <p>A secret that CAN reach an output stream eventually does, and being careful is not a control. go-gitsafe is the set of refusals that replace the care: a global pre-push hook that rejects any push whose remote URL carries a credential and any write to the branch pull requests land on, a credential helper that serves a token to git over a pipe and never to a command line, a scope checker that reads a token's powers without printing it, and a push wrapper that never reads the token at all.</p>
+  </div>
+  <h2 class="section">Packages</h2>
+  <p class="sub">{{ len hugo.Data.pkgs.packages }} module(s) in this organisation.</p>
+  <div class="grid">
+    {{ range hugo.Data.pkgs.packages }}
+    <div class="card">
+      <div class="chip">{{ .chip }}</div>
+      <div class="nm">{{ .name }}</div>
+      <div class="ds">{{ .desc }}</div>
+      <div class="lk"><a href="{{ .url }}">GitHub</a> · <a href="{{ .doc }}">pkg.go.dev</a></div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+<footer>Built with Hugo · Pure Go, CGO=0 · Branding from <a href="https://github.com/go-gitsafe/brand">go-gitsafe/brand</a></footer>
+</body></html>

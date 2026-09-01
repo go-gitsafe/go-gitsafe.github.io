@@ -1,0 +1,4 @@
+baseURL = "https://go-gitsafe.github.io/"
+locale = "en-us"
+title = "go-gitsafe"
+disableKinds = ["taxonomy", "term", "RSS", "sitemap"]

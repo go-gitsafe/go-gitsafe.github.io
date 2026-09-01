@@ -1,0 +1,2 @@
+packages:
+  - { name: "gitsafe", chip: "S", desc: "The hook, the credential helper, the scope checker and the push wrapper — one module, no cgo.", url: "https://github.com/go-gitsafe/gitsafe", doc: "https://pkg.go.dev/github.com/go-gitsafe/gitsafe" }
