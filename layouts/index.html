@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+{{/* Dark Reader repaints pages that already draw their own dark theme, as this one does: ask it to stand aside. */}}
+<meta name="darkreader-lock">
 <title>{{ .Site.Title }} — Guards that do not rely on remembering.</title>
 <meta name="description" content="Git guards in pure Go: a hook that refuses a credential in a remote URL, a credential helper, and a scope checker.">
 <link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}">
