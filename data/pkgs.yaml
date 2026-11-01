@@ -1,2 +1,2 @@
 packages:
-  - { name: "gitsafe", chip: "S", desc: "The git hooks, the Bash guard, the credential helper, the scope checkers and the push wrapper — one module, no cgo.", url: "https://github.com/go-gitsafe/gitsafe", doc: "https://pkg.go.dev/github.com/go-gitsafe/gitsafe" }
+  - { name: "gitsafe", chip: "S", desc: "The git hooks, the Bash guard, the credential helper, the scope checkers and the push wrapper — plus the merge, release and create tools that act only on evidence, and a scanner that strips credentials out of remote URLs across a machine. 17 commands, one module, no cgo.", url: "https://github.com/go-gitsafe/gitsafe", doc: "https://pkg.go.dev/github.com/go-gitsafe/gitsafe" }
